@@ -20,4 +20,10 @@ public class EmployeeController {
         ResponseResult responseResult = employeesReqService.update(employeeReq);
         return responseResult;
     }
+
+    @PostMapping
+    public ResponseResult insert(EmployeeReq employeeReq){
+        ResponseResult responseResult = employeesReqService.insert(employeeReq);
+        return responseResult;
+    }
 }
